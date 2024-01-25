@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+        <title>Steganography</title>
+        <link rel="stylesheet" href="css/main.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <noscript>
+            <h2>Sorry! Your browser doesn't support Javascript</h2>
+        </noscript>
+        <div class="upload-container">
+            <div class="upload-header">
+                <h2>Upload Files to Hide</h2>
+            </div>
+            <div class="upload-content">
+                <div class="cover-upload">
+                    <h4>Upload Cover File</h3>
+                    <form id="coverUploadForm" name="coverUploadForm">
+                        <input id="coverFileUploadInput" type="file" name="file" class="file-input" accept=".png, .jpg, .jpeg, .bmp" required />
+                        <button type="submit" class="primary submit-btn">Submit</button>
+                    </form>
+                    <div class="upload-response">
+                        <div id="coverFileUploadError"></div>
+                        <div id="coverFileUploadSuccess"></div>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <div class="secret-upload">
+                    <h4>Upload Secret File</h3>
+                    <form id="secretUploadForm" name="secretUploadForm">
+                        <input id="secretFileUploadInput" type="file" name="files" class="file-input" accept=".png, .jpg, .jpeg, .bmp" required />
+                        <button type="submit" class="primary submit-btn">Submit</button>
+                    </form>
+                    <div class="upload-response">
+                        <div id="secretFileUploadError"></div>
+                        <div id="secretFileUploadSuccess"></div>
+                    </div>
+                </div>
+                <br><br>
+                <div class="generate-image">
+                    <form id="encryptImage" name="encryptImage">
+                        <input type="button" name="generate" value="Generate" class="primary submit-btn" onclick="generateImage()">
+                    </form>
+                    <div class="upload-response">
+                        <div id="encryptedFileDownloadError"></div>
+                        <div id="encryptedFileDownloadSuccess"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-basic">
+            <footer>
+                <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-linkedin"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-github"></i></a></div>
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="#">Home</a></li>
+                    <li class="list-inline-item"><a href="#">Services</a></li>
+                    <li class="list-inline-item"><a href="#">About</a></li>
+                    <li class="list-inline-item"><a href="#">Terms</a></li>
+                    <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+                </ul>
+                <p class="copyright">Stegos © 2024</p>
+            </footer>
+        </div>
+        <script src="js/main.js" ></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
